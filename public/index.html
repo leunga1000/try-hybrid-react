@@ -1,25 +1,25 @@
 <html>
 	hello from index
 	<script type="module">
-  import RefreshRuntime from 'http://ln.mmkm.net:5173/@react-refresh'
+		// localhost - or the name of your server you are using to develop with (run vite with npm run dev -- --host 0.0.0.0)
+  import RefreshRuntime from 'http://localhost:5173/@react-refresh'
   RefreshRuntime.injectIntoGlobalHook(window)
   window.$RefreshReg$ = () => {}
   window.$RefreshSig$ = () => (type) => type
   window.__vite_plugin_react_preamble_installed__ = true
-console.log('he');
+
 </script>
 
-	<script type="module" src="http://ln.mmkm.net:5173/@vite/client">
+	<script type="module" src="http://localhost:5173/@vite/client">
 console.log('he');
 		</script>
 		<script> console.log('he'); </script>
-        <script type="module" src="http://ln.mmkm.net:5173/src/main.tsx"> </script>
+        <script type="module" src="http://localhost:5173/src/main.tsx"> </script>
 	<script type="module" >
-		import {renderIt} from "http://ln.mmkm.net:5173/src/main.tsx"
+		import {renderIt} from "http://localhost:5173/src/main.tsx"
 		renderIt('root2');
 	</script>
 	<script type="module">
-console.log('he');
 //		import React from 'react'
 import ReactDOM from 'react-dom/client'
 //import App from './App.tsx'
@@ -31,9 +31,7 @@ import ReactDOM from 'react-dom/client'
   </React.StrictMode>,
 )*/
 //ReactDOM.createRoot(document.getElementById('root2')).render(App);
-console.log('he');
 ReactDOM.render(App, document.querySelector("#root2"));
-console.log('he');
 	</script>
 <div id='root'></div>
 <div id='root2'></div>
